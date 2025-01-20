@@ -1,0 +1,448 @@
+.view-container {
+    background: #0f0715;
+    height: 100vh;
+}
+
+.users-details-container {
+    background: #0f0715;
+    height: 80vh;
+    width: 100vw;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.go-back-btn {
+    margin-top: 50px;
+    margin-left: 50px;
+    align-self: flex-start;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 500;
+    color: #8750f7;
+    border-radius: 50px;
+    padding: 17px 35px;
+    border: 1px solid #8750f7;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.go-back-btn:hover {
+    background-color: #8750f7;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-info {
+    display: flex;
+    gap: 3rem;
+    margin-top: 4rem;
+    align-items: center;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.info-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 0.3;
+}
+
+.mobile-info-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 0.3;
+}
+
+.label {
+    color: #888888;
+    font-size: 0.9rem;
+}
+
+.value {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.user-detail-container {
+    width: 75vw;
+    align-self: center;
+    padding: 20px;
+    background-color: #1f1e1e;
+    border-radius: 12px;
+}
+
+.profile-photo {
+    height: 200px;
+    width: 200px;
+    border-radius: 12px;
+    margin-right: 30px;
+    opacity: 0.8;
+}
+
+.profile-photo:hover {
+    opacity: 1;
+}
+
+.user-details {
+    display: flex;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.company-img {
+    height: 110px;
+    width: 110px;
+    border-radius: 12px;
+    opacity: 0.8;
+    margin-right: 30px;
+}
+
+.company-img:hover {
+    opacity: 1;
+}
+
+.company, .geo {
+    display: flex;
+    align-items: center;
+}
+
+.geo-img {
+    height: 110px;
+    width: 110px;
+    opacity: 0.8;
+    border-radius: 12px;
+    margin-left: 30px;
+}
+
+.geo-img:hover {
+    opacity: 1;
+}
+
+.geo-details {
+    text-align: right;
+}
+
+.company-geo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-geo-container p {
+    color: #888888;
+}
+
+.failure-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.failure-view img {
+    height: 360px;
+    width: 500px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.retry-btn {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 500;
+    color: #8750f7;
+    border-radius: 50px;
+    padding: 17px 35px;
+    border: 1px solid #8750f7;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.retry-btn:hover {
+    background-color: #8750f7;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.mobile-contact-info {
+    display: none;
+}
+
+/* Responsive Containers */
+
+@media (max-width : 500px) {
+    .view-container {
+        height: 100%;
+    }
+    .users-details-container {
+        padding: 10px 0px 20px;
+        height: 100%;
+    }
+    .go-back-btn {
+        margin-top: 20px;   
+        font-size: 12px;
+    }
+
+    .user-detail-container {
+        margin-top: 20px;
+    }
+
+    .profile-photo {
+        height: 100px;
+        width: 100px;
+    }
+
+    .name-basic-details h1 {
+        font-size: 20px;
+    }
+
+    .contact-info {
+        display: none
+    }
+
+    .mobile-contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .mobile-info-item {
+        margin-right: 13px;
+    }
+
+    .mobile-info-item span {
+        font-size: 12px;
+    }
+
+    .company-geo-container {
+        flex-wrap: wrap;
+    }
+
+    .company-details h2, .geo-details h2 {
+        font-size: 18px;
+    }
+
+    .company-img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .geo-img {
+        height: 100px;
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    .geo-details {
+        margin-right: 10px;
+    }
+
+    .failure-view {
+        height: 100vh;
+    }
+
+    .failure-view img {
+        width: 90%;
+        margin-top: 20px;
+        object-fit: cover;
+        overflow: hidden;
+        height: 265px;
+    }
+
+    .failure-view h2 {
+        font-size: 18px;
+    }
+
+    .failure-view p {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+@media (min-width : 501px) and (max-width : 768px) {
+    .view-container {
+        height: 100vh;
+    }
+
+    .users-details-container {
+        padding: 10px 0px 20px;
+        height: 100vh;
+    }
+
+    .go-back-btn {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .user-detail-container {
+        margin-top: 20px;
+    }
+
+    .profile-photo {
+        height: 100px;
+        width: 100px;
+    }
+
+    .name-basic-details h1 {
+        font-size: 20px;
+    }
+
+    .contact-info {
+        display: none
+    }
+
+    .mobile-contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .mobile-info-item {
+        margin-right: 13px;
+    }
+
+    .mobile-info-item span {
+        font-size: 15px;
+    }
+
+    .company-geo-container {
+        flex-wrap: wrap;
+    }
+
+    .company-details h2,
+    .geo-details h2 {
+        font-size: 18px;
+    }
+
+    .company-img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .geo {
+        margin-left: auto;
+    }
+
+    .geo-img {
+        height: 100px;
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    .geo-details {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width : 769px) and (max-width : 1199px) {
+    .view-container {
+        height: 100vh;
+    }    
+    
+    .users-details-container {
+        padding: 10px 0px 20px;
+        height: 90vh;
+    }
+    
+        .go-back-btn {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    
+        .user-detail-container {
+            margin-top: 20px;
+        }
+    
+        .profile-photo {
+            height: 100px;
+            width: 100px;
+        }
+    
+        .name-basic-details h1 {
+            font-size: 20px;
+        }
+    
+        .contact-info {
+            display: none
+        }
+    
+        .mobile-contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+    
+        .mobile-info-item {
+            margin-right: 13px;
+        }
+    
+        .mobile-info-item span {
+            font-size: 12px;
+        }
+    
+        .company-geo-container {
+            flex-wrap: wrap;
+        }
+    
+        .company-details h2,
+        .geo-details h2 {
+            font-size: 18px;
+        }
+    
+        .company-img {
+            height: 100px;
+            width: 100px;
+        }
+    
+        .geo-img {
+            height: 100px;
+            width: 100px;
+            margin-left: 10px;
+        }
+    
+        .geo-details {
+            margin-left: 10px;
+        }
+
+        .geo {
+            margin-left: auto;
+        }
+}
+
+@media screen and (min-width : 1141px) {
+    .users-details-container {
+        height: 80vh;
+    }
+}
